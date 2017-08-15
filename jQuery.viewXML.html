@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery.menuUI</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/jQuery.viewXML.css">
+</head>
+<body >
+	<div class="main container-fluid">
+		<div class="col-xs-12">
+			<div id="viewXML"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jQuery.viewXML.js"></script>
+	<script>
+	$(document).ready(function() {
+		var xmlString = "<note><note:1><to>Tove</to><from>Jani</from><heading>Reminder</heading><body>Don't forget me this weekend!</body></note:1><note:2><to>Tove</to><from>Jani</from><heading>Reminder</heading><body>Don't forget me this weekend!</body></note:2></note>";
+		$( "#viewXML" ).viewXML(xmlString);
+
+	});
+
+
+
+	</script>
+</body>
+</html>
